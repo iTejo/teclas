@@ -49,9 +49,9 @@
       papel.clearRect(0, 0, ancho, alto);
     }*/
 
-  document.addEventListener("mousedown", presionarMouse); //cuando presionas click
-  document.addEventListener("mouseup", soltarMouse); //cuando sueltas click
-  document.addEventListener("mousemove", dibujarMouse); //cuando mueves el mouse
+  document.addEventListener("mousedown touchstart", presionarMouse); //cuando presionas click
+  document.addEventListener("mouseup touchend", soltarMouse); //cuando sueltas click
+  document.addEventListener("mousemove touchmove", dibujarMouse); //cuando mueves el mouse
 
   // Funcion para mousemove
   function dibujarMouse(evento) {
